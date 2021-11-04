@@ -9,13 +9,10 @@ public class MaxElement {
         int size = input.nextInt();
         double[] array = new double[size];
 
-        for (int i = 0; i < array.length; i++) {
-            array[i] = input.nextDouble();
-        }
-
         double maxElement = Double.MIN_VALUE;
 
         for (int i = 0; i < array.length; i++) {
+            array[i] = input.nextDouble();
             if (array[i] > maxElement) {
                 maxElement = array[i];
             }
